@@ -9,26 +9,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="291d5e2f-3501-48f7-80a5-40c7d9f6a3a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/dao/UserDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="291d5e2f-3501-48f7-80a5-40c7d9f6a3a7" name="Changes" comment="Created classes and methods without realization">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/repositories/UsersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom_orig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom_orig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/AppInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/AppInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/dao/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/dao/UserDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,9 +52,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2eQKv2S9qGedUXcNQBTaAwdzIqI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,6 +66,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -61,7 +74,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Developer/Java/Projects/Kata pre-project/PP_2_3_1_springmvc-hibernate/src/main/webapp/WEB-INF",
+    "last_opened_file_path": "C:/Developer/Java/Projects/Kata pre-project/PP_2_2_2_spring-mvc-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -190,11 +203,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711831588527</updated>
-      <workItem from="1711831590033" duration="2098000" />
+      <workItem from="1711831590033" duration="6720000" />
+      <workItem from="1711889180533" duration="556000" />
+      <workItem from="1712250743038" duration="11682000" />
     </task>
+    <task id="LOCAL-00001" summary="Created classes and methods without realization">
+      <option name="closed" value="true" />
+      <created>1711833710815</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711833710815</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created classes and methods without realization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created classes and methods without realization" />
   </component>
 </project>

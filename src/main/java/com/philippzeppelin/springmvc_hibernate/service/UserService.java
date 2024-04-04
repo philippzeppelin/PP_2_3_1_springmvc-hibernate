@@ -5,9 +5,9 @@ import com.philippzeppelin.springmvc_hibernate.models.User;
 import java.util.List;
 
 public interface UserService {
-    List<User> showAllUsers();
+    List<User> findAll();
 
-    User showUser(int id);
+    User findOne(int id);
 
     void save(User user);
 
