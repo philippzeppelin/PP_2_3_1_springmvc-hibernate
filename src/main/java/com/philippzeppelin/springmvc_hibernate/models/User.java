@@ -1,10 +1,6 @@
 package com.philippzeppelin.springmvc_hibernate.models;
 
 import javax.persistence.*;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "user_table")
@@ -14,17 +10,12 @@ public class User {
     @Column(name = "id")
     private int id;
 
-    @Size(min = 2, max = 35, message = "Name should be between 2 and 30 characters")
-    @NotEmpty(message = "Name should not be empty.")
     @Column(name = "name")
     private String name;
 
-    @Min(value = 0, message = "Age should be greater than 0.")
     @Column(name = "age")
     private int age;
 
-    @Email
-    @NotEmpty(message = "Email should not be empty.")
     @Column(name = "email")
     private String email;
 

@@ -2,32 +2,25 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="PP_2_3_1_springmvc-hibernate:war exploded" />
+      <artifact name="spring-data-jpa-crud-app:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="291d5e2f-3501-48f7-80a5-40c7d9f6a3a7" name="Changes" comment="Created classes and methods without realization">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/repositories/UsersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/show.html" afterDir="false" />
+    <list default="true" id="291d5e2f-3501-48f7-80a5-40c7d9f6a3a7" name="Changes" comment="Finished task 2.3.1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/dao/UserDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/AppInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/AppInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom_orig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/dao/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/dao/UserDAOImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/repositories/UsersRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/philippzeppelin/springmvc_hibernate/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,14 +30,31 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "philippzeppelin"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/philippzeppelin/PP_2_3_1_springmvc-hibernate.git",
+    "accountId": "96197a80-2ef0-44d3-95de-8651a906159e"
+  }
+}]]></component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -74,7 +84,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Developer/Java/Projects/Kata pre-project/PP_2_2_2_spring-mvc-master",
+    "last_opened_file_path": "C:/Developer/Java/Projects/Kata pre-project/PP_2_2_1_spring_hibernate-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,7 +113,7 @@
     <configuration name="Tomcat 9.0.87" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.87" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="PP_2_3_1_springmvc-hibernate:war exploded">
+        <artifact name="spring-data-jpa-crud-app:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="" />
           </settings>
@@ -184,6 +194,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="PP_2_3_1_springmvc-hibernate:war exploded" />
+          <artifact name="spring-data-jpa-crud-app:war exploded" />
         </option>
       </method>
     </configuration>
@@ -191,7 +202,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -205,7 +217,8 @@
       <updated>1711831588527</updated>
       <workItem from="1711831590033" duration="6720000" />
       <workItem from="1711889180533" duration="556000" />
-      <workItem from="1712250743038" duration="11682000" />
+      <workItem from="1712250743038" duration="12550000" />
+      <workItem from="1712489676339" duration="7924000" />
     </task>
     <task id="LOCAL-00001" summary="Created classes and methods without realization">
       <option name="closed" value="true" />
@@ -215,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711833710815</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished task 2.3.1">
+      <option name="closed" value="true" />
+      <created>1712264086749</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712264086749</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +244,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created classes and methods without realization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created classes and methods without realization" />
+    <MESSAGE value="Finished task 2.3.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished task 2.3.1" />
   </component>
 </project>

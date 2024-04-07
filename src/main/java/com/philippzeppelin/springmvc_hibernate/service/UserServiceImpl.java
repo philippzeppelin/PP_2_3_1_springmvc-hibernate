@@ -1,51 +1,48 @@
 package com.philippzeppelin.springmvc_hibernate.service;
 
+import com.philippzeppelin.springmvc_hibernate.dao.UserDAO;
 import com.philippzeppelin.springmvc_hibernate.models.User;
-import com.philippzeppelin.springmvc_hibernate.repositories.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @Transactional(readOnly = true)
 public class UserServiceImpl implements UserService {
-    private UsersRepository usersRepository;
+    private UserDAO userDAO;
 
     @Autowired
-    public UserServiceImpl(UsersRepository usersRepository) {
-        this.usersRepository = usersRepository;
+    public UserServiceImpl(UserDAO userDAO) {
+        this.userDAO = userDAO;
     }
 
     @Override
     public List<User> findAll() {
-        return usersRepository.findAll();
+        return userDAO.showAllUsers();
     }
 
     @Override
     public User findOne(int id) {
-        Optional<User> foundUser = usersRepository.findById(id);
-        return foundUser.orElse(null);
+        return userDAO.showUser(id);
     }
 
-    @Override
     @Transactional
+    @Override
     public void save(User user) {
-        usersRepository.save(user);
+        userDAO.saveUser(user);
     }
 
-    @Override
     @Transactional
+    @Override
     public void update(int id, User updatedUser) {
-        updatedUser.setId(id);
-        usersRepository.save(updatedUser);
+        userDAO.updateUser(id, updatedUser);
     }
 
-    @Override
     @Transactional
+    @Override
     public void delete(int id) {
-        usersRepository.deleteById(id);
+        userDAO.deleteUser(id);
     }
 }
